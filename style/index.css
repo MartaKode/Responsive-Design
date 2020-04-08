@@ -1,1 +1,126 @@
 /* Add CSS styling here */
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+/* ^uploaded a default */
+*{
+    /* border:2px solid grey; */
+    background-color: rgba(80, 189, 53, 0.527);
+}
+/* Changing the size of the header */
+header h1{
+font-size: xxx-large;
+font-weight: bold;
+}
+/* uploading a background img and making it fill the space of the header;
+making everything go in a row, with even spacing in between*/
+header nav{
+width:100%;
+background-image: url('../images/leaves.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+/* Giving logo a width */
+.logo{
+width:20%;
+}
+
+.logo img{
+max-width:100%;
+}
+/*evenly spacing out links and removing their background to fit my default background img  */
+.links{
+width:60%;
+display:flex;
+justify-content:space-around;
+background: 0;
+}
+
+/* Stylizing the navigation font */
+nav a{
+    font-weight: 600;
+    font-size: xxx-large;
+    background:0;
+    font-family: 'Butcherman', cursive;
+    color:white;
+}
+/* adding a hover effect to nav */
+nav a:hover{
+    color:rgba(64, 138, 199, 0.459);}
+
+/* stylizing intro section */
+    #intro{
+        background-color: teal;
+display:flex;
+justify-content:center;
+    }
+
+    #intro .introtext{
+        background-color: teal;
+        padding:6%;
+        text-align: center;
+        width:100%;
+        
+    }
+.introtext h2{
+    font-size:30px;
+    font-weight: bolder;
+}
+
+.introtext p{
+    background-color: teal;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+/* setting parameters for my cover pic */
+.bigpicture{
+width: 100%; 
+height: 500px; 
+border: 5px dashed #f7a239;
+}
+/* making the picture stretch into above paremeters */
+.bigpicture img{
+    width:100%;
+    height:100%;
+}
+
+.gallery{
+    width:100%;
+    display:flex;
+    height:400px;
+}
+
+.gallery p{
+    width:20%;
+    color:white;
+    font-size:xx-large;
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+}
